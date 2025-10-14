@@ -90,7 +90,8 @@ nav a:hover {
   flex-direction: column;
   text-align: left;
   padding: 2rem 5%;
-  padding-top: auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   overflow: hidden;
   }
 
