@@ -89,6 +89,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
+  line-height: 1.2;
   padding: 2rem 5%;
   padding-top: 5rem;
   padding-bottom: 20rem;
