@@ -90,8 +90,9 @@ nav a:hover {
   flex-direction: column;
   text-align: left;
   padding: 2rem 5%;
-  padding-top: 30rem;
-}
+  padding-top: auto;
+  overflow: hidden;
+  }
 
 .hero h1 {
     font-size: 4.5rem;
