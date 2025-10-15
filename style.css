@@ -567,6 +567,7 @@ font-size: 90px;
 
 .btns{
   background: linear-gradient(94.45deg, #245472 53.87%, #182F3D 156.97%);
+  color: #FFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -595,11 +596,11 @@ font-size: 90px;
 
 .btnsbeauty i{
   background: #245472;
-  color: #d8d8d8;
+  color: #FFF;
   border-radius: 50%;
-  padding: 0.4rem;
+  padding: 1rem;
   margin-right: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -708,3 +709,173 @@ margin: 0;
 .bold{
 font-weight: bold;
 }
+
+/* ==== MEDIA QUERY: REGRAS PARA CELULARES (<= 768px) ==== */
+
+@media (max-width: 768px) {
+
+    /* CORREÇÃO GERAL E HEADER */
+    /* ------------------------------------- */
+    
+    header {
+        /* Diminui o padding do header e o tamanho da fonte */
+        padding: 0.8rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    header .logo {
+        font-size: 1.5rem;
+    }
+    
+    .header-right {
+        /* Esconde a navegação principal para telas pequenas */
+        display: none; 
+    }
+    
+    /* HERO SECTION (PRIMEIRA TELA) */
+    /* ------------------------------------- */
+    .hero {
+        /* Remove a altura fixa de 100vh para evitar que o conteúdo vaze */
+        height: auto; 
+        /* Ajusta o padding para celular */
+        padding: 5rem 1.5rem 5rem 1.5rem; 
+        padding-top: 5rem;
+        padding-bottom: 5rem; /* Garante espaçamento inferior */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Diminui o título */
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Diminui o parágrafo */
+        max-width: 100%;
+    }
+
+    .hero button {
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+    /* SEÇÃO DORES (LAYOUT DE GRID) */
+    /* ------------------------------------- */
+    .dores {
+        padding: 3rem 0;
+    }
+
+    .dores-container {
+        /* Muda o grid para uma coluna (Título + 5 Cards empilhados) */
+        grid-template-columns: 1fr; 
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+    
+    .dores-h2container {
+        font-size: 2.2rem;
+        max-width: 100%;
+        border-left: none; /* Remove a linha lateral no mobile */
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    /* Faz todos os cards ficarem empilhados e ocuparem a largura total */
+    .dores-container .card,
+    .dores-container .card:nth-child(2),
+    .dores-container .card:nth-child(3),
+    .dores-container .card:nth-child(4),
+    .dores-container .card:nth-child(5),
+    .dores-container .card:nth-child(6) {
+        grid-column: 1 / -1; /* Ocupa a coluna inteira */
+        grid-row: auto; /* Deixa o fluxo normal */
+        min-width: 100%;
+    }
+
+    .card1 {
+        min-width: 100%;
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .dores .cardh2 {
+        font-size: 1.3rem;
+    }
+
+    /* SEÇÃO METRICAS */
+    /* ------------------------------------- */
+    .metricas {
+        /* Empilha as métricas uma em cima da outra */
+        flex-direction: column; 
+        gap: 1.5rem;
+        padding: 3rem 1.5rem;
+    }
+
+    /* SEÇÃO SERVIÇOS */
+    /* ------------------------------------- */
+    .h2serio {
+        font-size: 3rem; /* Diminui o título grande */
+    }
+    
+    .servicos-grid {
+        /* Muda o grid para uma coluna só */
+        grid-template-columns: 1fr; 
+        margin: 2rem 1.5rem;
+        min-height: auto;
+    }
+
+    .servico {
+        padding: 40px 20px;
+    }
+
+    .servico h2 {
+        font-size: 1.5rem;
+        height: auto;
+    }
+
+    .servico p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    
+    /* SEÇÃO SOBRE */
+    /* ------------------------------------- */
+    #sobre {
+        padding: 4rem 1.5rem;
+        text-align: center;
+    }
+
+    #sobre h2, #sobre p, .btn-sobre {
+        /* Remove o margin-left fixo para centralizar */
+        margin-left: 0; 
+        text-align: center;
+        width: 100%;
+    }
+    
+    .btn-sobre {
+        /* Garante que o botão ocupe toda a largura */
+        width: 100%;
+        height: auto;
+        padding: 1.2rem 1rem;
+    }
+
+    /* FOOTER */
+    /* ------------------------------------- */
+    .footer-top {
+        /* Empilha logo e contatos */
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .logfot {
+        margin-bottom: 1rem;
+    }
+
+    .contatos-fot {
+        text-align: center;
+    }
+
+} /* Fim da Media Query */
