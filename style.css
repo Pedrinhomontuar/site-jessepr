@@ -12,10 +12,9 @@ background: #f5f5f5;
 
 }
 
-/*header*/
 header {
   font-size: 2rem;
-  font-family: 'Inter', sans-serif bold;
+  font-family: 'Inter', sans-serif;
   font-weight: bolder;
   background: #fff;
   padding: 1rem 1rem;
@@ -79,7 +78,6 @@ nav a:hover {
   color: #ff5733;
 }
 
-/*hero*/
 .hero {
   height: 100vh;
   justify-content: flex-start;
@@ -134,7 +132,6 @@ nav a:hover {
   padding: 1.5rem;
 }
 
-/* ----------------dores-----------------*/
 .dores {
   background: #d8d8d8;
   text-align: left;
@@ -164,34 +161,30 @@ nav a:hover {
   align-self: start;
 }
 
-/* CARD 1: Medo de cair na malha fina */
 .dores-container .card:nth-child(2) {
-    grid-column: 1 / 2; /* Coluna da Esquerda */
-    grid-row: 2 / 3;    /* Linha 2 */
+    grid-column: 1 / 2; 
+    grid-row: 2 / 3;    
 }
 
-/* CARD 2: Falta de tempo pra cuidar das finanças */
 .dores-container .card:nth-child(3) {
-    grid-column: 1 / 2; /* Coluna da Esquerda */
-    grid-row: 3 / 4;    /* Linha 3 */
+    grid-column: 1 / 2; 
+    grid-row: 3 / 4;    
 }
 
-/* CARD 3: Crescimento travado (ou a primeira da direita) */
 .dores-container .card:nth-child(4) {
-    grid-column: 2 / 3; /* Coluna do Meio */
-    grid-row: 1 / 2;    /* Linha 1 */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
-/* CARD 4: Lucro não acompanha o faturamento */
+
 .dores-container .card:nth-child(5) {
-    grid-column: 2 / 3; /* Coluna do Meio */
-    grid-row: 2 / 3;    /* Linha 2 */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
 }
 
-/* CARD 5: Impostos acima do necessário */
 .dores-container .card:nth-child(6) {
-    grid-column: 2 / 3; /* Coluna do Meio */
-    grid-row: 3 / 4;    /* Linha 3 */
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;   
 }
 
 .card:nth-child(1){
@@ -272,7 +265,6 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/*metricas*/
 .metricas {
   background: linear-gradient(94.45deg, #245472 53.87%, #182F3D 156.97%);
   color: #fff;
@@ -282,9 +274,9 @@ nav a:hover {
   padding: 2rem;
   line-height: 2rem;
   text-align: center;
-  font-family: 'poppins' sans-serif;
+  font-family: 'poppins', sans-serif;
   font-weight: bold;
-  font-size: 19;
+  font-size: 1.05rem;
 }
 
 .numero{
@@ -295,7 +287,6 @@ nav a:hover {
   color: #FFFFFF;
 }
 
-/*serviços*/
 #servicos {
   background: #d8d8d8;  
   padding: 4rem 2rem;
@@ -381,7 +372,7 @@ font-size: 90px;
   margin-right: auto;
   margin-top: 1rem;
 }
-/*sobre*/
+
 #sobre {
  background: #245472;
  color: #FFf;
@@ -405,7 +396,6 @@ font-size: 90px;
   transform: scale(1.05);
 }
 
-/*depoimentos*/
 .depoimentos {
   background: #d8d8d8;
   color: #245472;
@@ -496,12 +486,10 @@ font-size: 90px;
   .card img { width: 100%; height: auto; object-fit: cover; }
 }
 
-/*=======SOBRE==========*/
+
 #sobre {
-    /* Cor de fundo do design (azul escuro) */
     background: linear-gradient(94.45deg, #245472 53.87%, #182F3D 156.97%);
     color: linear-gradient(0deg, #F8F8F8, #F8F8F8), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    /* Aumenta a altura e dá espaço nas laterais */
     padding: 6rem 2rem; 
     display: flex;
     flex-direction: column;
@@ -512,8 +500,8 @@ font-size: 90px;
   align-items: start;
   justify-content: start;
   text-align: left;
-  width: 640;
-  height: 50;
+  width: 640px;
+  height: 50px;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -523,8 +511,8 @@ font-size: 90px;
 #sobre p {
   margin-top: 1.4rem;
   margin-bottom: 2.5rem;
-  width: 640;
-  height: 156;
+  width: 640px;
+  height: 156px;
   text-align: left;
     margin-left: 5rem;
     max-width: 640px; 
@@ -546,7 +534,6 @@ font-size: 90px;
     cursor: pointer;
     box-shadow: 0px 0px 19.4px 0px #BC954EA3;
     transition: all 0.3s ease;
-    /* Centraliza o botão dentro da seção */
     margin-top: 1rem;
     margin-bottom: 3rem;
     margin-left: 5rem;
@@ -608,7 +595,6 @@ font-size: 90px;
   height: 25px;
 }
 
-/*ctafinal*/
 .cta-final {
   background: #d8d8d8;
   color: #1c1c1c;
@@ -655,8 +641,6 @@ font-size: 90px;
   box-shadow: 0px 0px 25px 0px #BC954EA3;
 }
 
-
-/* FOOTER */
 footer {
   background: #245472;
   color: #fff;
@@ -694,31 +678,24 @@ footer {
   font-size: 1rem;
 }
 
-.foot-botom{
+.foot-bottom{
   text-align: center;
   justify-content: center;
   font-size: .9rem;
   line-height: 1.5;
-  margin: a;
+  margin: auto;
 }
 
-.foot-botom p{
+.foot-bottom p{
 margin: 0;
 }
 
 .bold{
 font-weight: bold;
 }
-
-/* ==== MEDIA QUERY: REGRAS PARA CELULARES (<= 768px) ==== */
-
 @media (max-width: 768px) {
 
-    /* CORREÇÃO GERAL E HEADER */
-    /* ------------------------------------- */
-    
     header {
-        /* Diminui o padding do header e o tamanho da fonte */
         padding: 0.8rem 1.5rem;
         font-size: 1.5rem;
     }
@@ -728,28 +705,23 @@ font-weight: bold;
     }
     
     .header-right {
-        /* Esconde a navegação principal para telas pequenas */
         display: none; 
     }
-    
-    /* HERO SECTION (PRIMEIRA TELA) */
-    /* ------------------------------------- */
+
     .hero {
-        /* Remove a altura fixa de 100vh para evitar que o conteúdo vaze */
         height: auto; 
-        /* Ajusta o padding para celular */
         padding: 5rem 1.5rem 5rem 1.5rem; 
         padding-top: 5rem;
-        padding-bottom: 5rem; /* Garante espaçamento inferior */
+        padding-bottom: 5rem;
     }
 
     .hero h1 {
-        font-size: 2.5rem; /* Diminui o título */
+        font-size: 2.5rem;
         max-width: 100%;
     }
 
     .hero p {
-        font-size: 1.2rem; /* Diminui o parágrafo */
+        font-size: 1.2rem;
         max-width: 100%;
     }
 
@@ -760,15 +732,11 @@ font-weight: bold;
         width: 100%;
     }
 
-
-    /* SEÇÃO DORES (LAYOUT DE GRID) */
-    /* ------------------------------------- */
     .dores {
         padding: 3rem 0;
     }
 
     .dores-container {
-        /* Muda o grid para uma coluna (Título + 5 Cards empilhados) */
         grid-template-columns: 1fr; 
         padding: 0 1.5rem;
         gap: 2rem;
@@ -777,20 +745,19 @@ font-weight: bold;
     .dores-h2container {
         font-size: 2.2rem;
         max-width: 100%;
-        border-left: none; /* Remove a linha lateral no mobile */
+        border-left: none;
         padding-left: 0;
         text-align: center;
     }
-    
-    /* Faz todos os cards ficarem empilhados e ocuparem a largura total */
+
     .dores-container .card,
     .dores-container .card:nth-child(2),
     .dores-container .card:nth-child(3),
     .dores-container .card:nth-child(4),
     .dores-container .card:nth-child(5),
     .dores-container .card:nth-child(6) {
-        grid-column: 1 / -1; /* Ocupa a coluna inteira */
-        grid-row: auto; /* Deixa o fluxo normal */
+        grid-column: 1 / -1;
+        grid-row: auto;
         min-width: 100%;
     }
 
@@ -804,23 +771,17 @@ font-weight: bold;
         font-size: 1.3rem;
     }
 
-    /* SEÇÃO METRICAS */
-    /* ------------------------------------- */
     .metricas {
-        /* Empilha as métricas uma em cima da outra */
         flex-direction: column; 
         gap: 1.5rem;
         padding: 3rem 1.5rem;
     }
 
-    /* SEÇÃO SERVIÇOS */
-    /* ------------------------------------- */
     .h2serio {
-        font-size: 3rem; /* Diminui o título grande */
+        font-size: 3rem;
     }
     
     .servicos-grid {
-        /* Muda o grid para uma coluna só */
         grid-template-columns: 1fr; 
         margin: 2rem 1.5rem;
         min-height: auto;
@@ -839,32 +800,25 @@ font-weight: bold;
         font-size: 1.2rem;
         margin-top: 1rem;
     }
-    
-    /* SEÇÃO SOBRE */
-    /* ------------------------------------- */
+
     #sobre {
         padding: 4rem 1.5rem;
         text-align: center;
     }
 
     #sobre h2, #sobre p, .btn-sobre {
-        /* Remove o margin-left fixo para centralizar */
         margin-left: 0; 
         text-align: center;
         width: 100%;
     }
     
     .btn-sobre {
-        /* Garante que o botão ocupe toda a largura */
         width: 100%;
         height: auto;
         padding: 1.2rem 1rem;
     }
 
-    /* FOOTER */
-    /* ------------------------------------- */
     .footer-top {
-        /* Empilha logo e contatos */
         flex-direction: column; 
         align-items: center;
         text-align: center;
@@ -878,4 +832,4 @@ font-weight: bold;
         text-align: center;
     }
 
-} /* Fim da Media Query */
+}
